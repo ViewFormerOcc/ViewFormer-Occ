@@ -1,10 +1,10 @@
 <div align="center">
-<h2>ViewFormer: Multi-view 3D Motion Occupancy Prediction for Enhancing Dynamic Scene Representation</h2>
+<h2>ViewFormer: Exploring Spatiotemporal Modeling for Multi-View 3D Occupancy Perception via View-Guided Transformers</h2>
 </div>
 
 <video src="https://github.com/user-attachments/assets/a5856329-0210-4e3a-bbfb-16580e47ba9e" controls="controls" width="500" height="300"></video>
 
-> **ViewFormer: Multi-view 3D Motion Occupancy Prediction for Enhancing Dynamic Scene Representation**, ECCV 2024
+> **ViewFormer: Exploring Spatiotemporal Modeling for Multi-View 3D Occupancy Perception via View-Guided Transformers**, ECCV 2024
 > - [Paper in arXiv](https://arxiv.org/abs/2405.04299) | [Blog in Chinese](https://zhuanlan.zhihu.com/p/706548179)
 
 # News
