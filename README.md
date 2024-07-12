@@ -9,7 +9,7 @@
 
 # News
 - [2024/7/01]: 🚀 ViewFormer is accepted by **ECCV 2024**.
-- [2024/5/15]: 🚀 ViewFormer rank **1st** on the occupancy trick of [RoboDrive Challenge](https://robodrive-24.github.io/)!
+- [2024/5/15]: 🚀 ViewFormer ranks **1st** on the occupancy trick of [RoboDrive Challenge](https://robodrive-24.github.io/)!
 
 
 # Abstract
