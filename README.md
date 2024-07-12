@@ -2,7 +2,7 @@
 <h2>ViewFormer: Multi-view 3D Motion Occupancy Prediction for Enhancing Dynamic Scene Representation</h2>
 </div>
 
-<video src="https://raw.githubusercontent.com/ViewFormerOcc/files/main/ViewFormer.mp4" controls="controls" width="500" height="300"></video>
+https://raw.githubusercontent.com/ViewFormerOcc/files/main/ViewFormer.mp4
 
 > **ViewFormer: Multi-view 3D Motion Occupancy Prediction for Enhancing Dynamic Scene Representation**, ECCV 2024
 > - [Paper in arXiv](https://arxiv.org/abs/2405.04299) | [Blog in Chinese](https://zhuanlan.zhihu.com/p/706548179)
