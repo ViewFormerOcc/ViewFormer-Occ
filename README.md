@@ -35,15 +35,23 @@ Please follow our documentations to get started.
 3. [**Training and Inference.**](./docs/training_inference.md)
 
 
+
 ## Results on [Occ3D](https://github.com/CVPR2023-3D-Occupancy-Prediction/CVPR2023-3D-Occupancy-Prediction/tree/main)(based on nuScenes) Val Set.
-| Method | Backbone | Lr Schd | IoU|  Config | Download |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| ViewFormer | R50 | 90ep | 41.85 |[config](projects/configs/motionocc/motionocc_r50_704x256_seq_90e.py) |[model](https://drive.google.com/file/d/1MQtk_ZVaN0VoXxO_l8PzL1JENoTGg_Tb/view?usp=sharing)|
+| Method | Backbone | Pretrain | Lr Schd | mIoU |  Config | Download |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ViewFormer | R50 | [R50-depth](https://github.com/zhiqi-li/storage/releases/download/v1.0/r50_256x705_depth_pretrain.pth) | 90ep | 41.85 |[config](projects/configs/viewformer/viewformer_r50_704x256_seq_90e.py) |[model](https://drive.google.com/file/d/1_8ZD0IvtO7_T5l4TxRflQ3q07Oa7pcKB/view?usp=sharing)|
+| ViewFormer | InternT | [COCO](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask_rcnn_internimage_t_fpn_3x_coco.pth) | 24ep | 43.61 |[config](projects/configs/viewformer/viewformer_InternImageTiny_704x256_seq.py) |[model](https://drive.google.com/file/d/1meFK7NEJml6yLmQeBrqdr12NnQ_jC9Ya/view?usp=sharing)|
 
-* More model weights will be released later.
+**Note**: 
+- Since we do not adopt the CBGS setting, our 90-epoch schedule is equivalent to the 20-epoch schedule in FB-OCC, which extends the training period by approximately 4.5 times.
 
-**Notes**: 
-- Since we do not adopt the CBGS setting, our 90-epoch schedule is equivalent to the 20-epoch schedule in FB-OCC, which utilizes CBGS to extend the training period by approximate 4.5 times.
+## Results on [FlowOcc3D](https://huggingface.co/viewformer/ViewFormer-Occ) Val Set.
+| Method | Backbone | Pretrain | Lr Schd | mIoU | mAVE |  Config | Download |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ViewFormer | InternT | [COCO](https://huggingface.co/OpenGVLab/InternImage/resolve/main/mask_rcnn_internimage_t_fpn_3x_coco.pth) | 24ep | 42.54 | 0.412 |[config](projects/configs/viewformer/viewformer_InternImageTiny_704x256_seq_flow.py) |[model](https://drive.google.com/file/d/1rkGHPtmryjLIZOEk-4asaDegErGOX9Uy/view?usp=sharing)|
+
+**Note**: 
+- The difference between COCO pre-trained weights and ImageNet pre-trained weights in our experiments is minimal. ImageNet pre-trained weights achieve slightly higher accuracy. We maintain the COCO pre-trained weights here to fully replicate the accuracy reported in our paper.
 
 ## Acknowledgements
 
