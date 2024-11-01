@@ -2,7 +2,7 @@
 
 ## 1. Dataset
 
-Please follow instructions of [CVPR2023 3D Occupancy Challenge](https://github.com/CVPR2023-3D-Occupancy-Prediction/CVPR2023-3D-Occupancy-Prediction) to download nuScenes dataset, which need to be placed in `./data/nuscenes`.
+Please follow instructions of [CVPR2023 3D Occupancy Challenge](https://github.com/CVPR2023-3D-Occupancy-Prediction/CVPR2023-3D-Occupancy-Prediction) to download Occ3D dataset, which need to be placed in `./data/nuscenes`.
 
 ## 2. [FlowOcc3D](https://huggingface.co/viewformer/ViewFormer-Occ) (3D Occupancy Flow Dataset)
 
